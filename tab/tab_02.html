@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tab with JS</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="active"><a id='homeID' href="#home">Home</a></li>
+  <li><a id='profileID' href="#profile">Profile</a></li>
+  <li><a id='messagesID' href="#messages">Messages</a></li>
+  <li><a id='settingsID' href="#settings">Settings</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home">home</div>
+  <div class="tab-pane" id="profile">profile</div>
+  <div class="tab-pane" id="messages">messages</div>
+  <div class="tab-pane" id="settings">settings</div>
+</div>
+
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script>
+
+$('#homeID').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+$('#profileID').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+$('#messagesID').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+$('#settingsID').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+</script>
+
+</body>
+</html>

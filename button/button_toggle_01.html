@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Button Toggle</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<button type="button" class="btn btn-primary" data-toggle="button">ToggleButton1</button>
+<br><br>
+<button type="button" id='but2' class="btn btn-primary">ToggleButton2</button>
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script>
+	$('#but2').click(function() {
+		var btn = $(this)
+		btn.button('toggle');
+		//$('#but2').button('toggle')
+	});
+</script>
+
+
+</body>
+</html>
